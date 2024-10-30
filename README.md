@@ -6,8 +6,8 @@ A Vue.js application with hot-reloading for development and optimized build supp
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd my-app
+   git clone git@github.com:NabeekhAbid/email-vault-frontend.git
+   cd email-vault-frontend
    ```
 
 2. Install dependencies:
