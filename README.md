@@ -1,4 +1,4 @@
-# my-app
+# Email Vault Frontend
 
 A Vue.js application with hot-reloading for development and optimized build support for production.
 
