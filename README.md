@@ -44,6 +44,32 @@ npm run lint
 
 Configure environment variables by creating `.env` files (e.g., `.env.development` and `.env.production`) and reference them in the project as needed.
 
+### Converting `.env.example` into Environment Files
+
+To set up your environment variables, you can convert the `.env.example` file into your own `.env` files by following these steps:
+
+1. **Copy the `.env.example` file**:
+   Create a new `.env.development` file by copying the example.
+   ```bash
+   cp .env.example .env.development
+   ```
+
+2. **Edit the new `.env.development` file**:
+   Open `.env.development` in your favorite text editor and update the variables to suit your local development environment. Use the following format for each variable:
+   ```plaintext
+   VUE_APP_API_URL=http://localhost:5000/api
+   VUE_APP_OTHER_VARIABLE=value
+   ```
+
+   Make sure that all environment variable names start with `VUE_APP_` so that they can be accessed within your Vue.js application.
+
+3. **Create a production environment file (if needed)**:
+   If you also need a production environment file, repeat the process:
+   ```bash
+   cp .env.example .env.production
+   ```
+   Then, edit `.env.production` similarly to include production-specific values.
+
 ### Customize Configuration
 
 For advanced configurations, refer to the [Vue CLI Configuration Reference](https://cli.vuejs.org/config/).
